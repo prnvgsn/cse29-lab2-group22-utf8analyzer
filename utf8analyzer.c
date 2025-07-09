@@ -11,4 +11,8 @@ int main(int argc, char *argv[]) {
     }
 
     // implement the UTF-8 analyzer here
+    char inString[] = "";
+    str_len = strlen(inString);
+
+    printf("Length in bytes: %u\n", str_len);
 }
