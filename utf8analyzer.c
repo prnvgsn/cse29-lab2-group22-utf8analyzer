@@ -312,6 +312,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+<<<<<<< HEAD
     const char *input_string = argv[1];
 
     printf("Input string: %s\n", input_string);
@@ -350,4 +351,7 @@ int main(int argc, char *argv[]) {
     print_incremented_codepoint_at_index(input_string, 3); // Index 3 for the 4th codepoint
 
     return 0;
+=======
+    // implement the UTF-8 analyzer here
+>>>>>>> 6a78e1fea08f678585947c2994ce8076e38a4320
 }
