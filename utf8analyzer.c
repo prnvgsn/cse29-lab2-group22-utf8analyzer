@@ -11,4 +11,12 @@ int main(int argc, char *argv[]) {
     }
 
     // implement the UTF-8 analyzer here
+    int i = 0;
+    int validASCII = 1; 
+    while (*argv[i] != 0) {
+        if ((*argv[i] & 0b10000000) != 0) { validASCII = 0; }
+    }
+
+    printf("Valid ASCII: ");
+    if (validASCII == 1) { printf(" true\n"); } else { printf(" false\n");}
 }
